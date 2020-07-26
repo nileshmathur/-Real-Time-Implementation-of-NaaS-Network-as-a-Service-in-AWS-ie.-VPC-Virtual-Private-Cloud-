@@ -78,7 +78,7 @@ resource "tls_private_key" "key_pair" {
 resource "aws_key_pair" "key" {
 	depends_on 			= [ tls_private_key.key_pair ,]                       #Creating Key Pair
 	
-	key_name 			= "arpitT1"
+	key_name 			= "nilesh1"
 	public_key 			= tls_private_key.key_pair.public_key_openssh
 
 }
